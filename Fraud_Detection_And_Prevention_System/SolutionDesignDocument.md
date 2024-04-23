@@ -47,8 +47,45 @@ This is where we have our trained machine learning model deployed in real-time a
 #### e. Act:
 After applying business rules and emerging fraud checks it gives output whether to accept or decline the transaction.
 
-### Real-time event streaming in action:
+### Real-time stream processing in action:
 To perform the above operations we will require an efficient event streaming pipeline. Stream processing is the foundation for implementing fraud detection and prevention while the data is in motion (and relevant) instead of just storing data at rest for analytics (too late).
 
+For stream processing, we will be requiring stream processing engines like Apache Kafka. Apache Kafka is so good for real-time data streaming that it is even used by giant corporations like Twitter, Uber, Pinterest, Netflix, Tumblr, PayPal and many others. Its real-time data streaming abilities also make Apache Kafka an ideal choice for fraud detection. 
 
+#### Using Apache Kafka for real-time data streaming:
 
+![image](https://github.com/Sandesh3003/solution-design/assets/77960808/a63bd6af-986e-4dc5-a328-9788d3302e21)
+
+Apache Kafka runs on a horizontally scalable cluster of commodity servers. It uses these servers to ingest real-time data from multiple systems and applications, known as producers.
+Data is sent and received easily between Kafka servers. Changes in the state of the system are recorded as events.
+
+Data can be transformed, read, and rewritten to topics. 
+This data is then made available to a variety of consumer applications.
+To explain in more detail, we can expand upon some of the key terms used above:
+
+- **Producer:** a client application that pushes events into topics. Examples of producers include IoT devices, databases, or web apps.
+
+- **Event:** A record of a change to the state of the system. Apache Kafka is an event streaming platform, meaning that it transmits data as events. It can publish and subscribe to a stream of events and store and process them as they occur.
+
+- **Topic:** The method used to categorize and store events. They are logs that hold events in a logical order and enable data to be sent and received between Kafka servers easily. Older topic messages can be updated by newer topic messages, which allows data to be transformed.
+
+- **Consumer:** Applications that read and process events from partitions. Java applications can pull data from topics and write results back to Apache Kafka, thanks to the Streams API.
+
+Steps to implement real-time data streaming:
+1. Create Kafka Producer: Develop a Kafka producer application to generate and publish streaming data.
+2. Define Kafka Topics: Define Kafka topics to organize and manage the streaming data.
+3. Implement Kafka Consumer: Develop a Kafka consumer application to consume and process the streaming data, here we will transform data by feature engineering.
+
+Now, the next operation is prediction, evaluating the fraud probability.
+
+## 2. Fraud prediction:
+
+Machine Learning is used in fraud prediction due to its ability to analyze large quantities of data, identify patterns, and adapt to new information. 
+
+The fraud detection is a classification and prediction problem. Supervised machine learning models have been proven as the best models in classifying and predicting financial transactions as either fraudulent or not using the decision tree, Logistic Regression, Random Forest, or Neural Networks.
+
+Neural Network gives more accurate results than other models as it uses cognitive computing and it learns from the patterns of authorized behavior and thus distinguishes between ‘fraud’ and ‘genuine’ transactions.
+
+### Fraud Detection using Neural Networks:
+
+Neural Networks is a concept inspired by the working of a human brain. Neural networks in Deep Learning uses different layers for computation. It uses cognitive computing that helps in building machines capable of using self-learning algorithms that involve the use of data mining, pattern recognition, and natural language processing. It is trained on a dataset passing it through different layers several times.
