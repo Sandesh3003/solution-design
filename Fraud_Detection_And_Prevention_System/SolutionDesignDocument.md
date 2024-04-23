@@ -28,7 +28,7 @@ Real-time data processing is also calleed stream processing because of continuou
 
 When you are trying to make any payment or withdraw money using credit card the request is sent to your bank and the bank checks your pin and other details and determines whether to process the transaction or not. There is a time window between the request is sent and processing the request, during this very small time window we want to apply many operations: 
 
-![](/home/sandesh/Downloads/Operations.drawio.png)
+![Operations drawio](https://github.com/Sandesh3003/solution-design/assets/77960808/03eb0a4b-df10-4b28-85cf-25c80004e492)
 
 #### 1. Ingest: 
 Collecting processing data from various sources in real or near-real time. Streaming data is a type of real-time data ingestion. In our case, the ingested data is the information regarding the transaction such as transaction number, credit card number, amount, device, geolocation, etc.
