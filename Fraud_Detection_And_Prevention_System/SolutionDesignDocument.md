@@ -14,3 +14,11 @@ transactions, and peer-to-peer transfers. The solution should offer a seamless
 user experience while maintaining robust security measures to combat
 evolving fraud threats in the digital payments landscape.
 
+## System Overview
+
+The proposed system aims to:
+
+1. Analyze Transaction data in real time and flag the suspicious transactions.
+2. Implement Multi-Factor Authentication(MFA).
+3. Monitor transactions from multiple channels.
+4. Seamless user experience.
