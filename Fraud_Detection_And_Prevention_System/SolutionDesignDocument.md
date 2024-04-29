@@ -82,10 +82,25 @@ Now, the next operation is prediction, evaluating the fraud probability.
 
 Machine Learning is used in fraud prediction due to its ability to analyze large quantities of data, identify patterns, and adapt to new information. 
 
-The fraud detection is a classification and prediction problem. Supervised machine learning models have been proven as the best models in classifying and predicting financial transactions as either fraudulent or not using the decision tree, Logistic Regression, Random Forest, or Neural Networks.
+The fraud detection is a classification and prediction problem. Supervised machine learning models have been proven as the best models in classifying and predicting financial transactions as either fraudulent or not using the decision tree, Logistic Regression, or Random Forest.
 
-Neural Network gives more accurate results than other models as it uses cognitive computing and it learns from the patterns of authorized behavior and thus distinguishes between ‘fraud’ and ‘genuine’ transactions.
+Fraud in digital transactions is an example of an imbalanced problem. Imbalanced learning addresses classification problems where the number of examples representing one class is much lower than the ones of the other classes. Learning from imbalanced datasets is a difficult task since most learning algorithms are not designed to cope with a large difference between the number of cases belonging to different classes.
+
+![image](https://github.com/Sandesh3003/solution-design/assets/77960808/dea079be-58e7-4065-a95b-52c1f6697442)
+
+Neural Network gives more accurate results than other models as it uses cognitive computing and it learns from the patterns of authorized behavior and thus distinguishes between ‘fraud’ and ‘genuine’ transactions. Comparatively to classical methods, there are an infinite set of hyperparameters and possibilities, which entails a time-consuming tuning process but allows a great expressivity.
 
 ### Fraud Detection using Neural Networks:
 
 Neural Networks is a concept inspired by the working of a human brain. Neural networks in Deep Learning uses different layers for computation. It uses cognitive computing that helps in building machines capable of using self-learning algorithms that involve the use of data mining, pattern recognition, and natural language processing. It is trained on a dataset passing it through different layers several times.
+
+![image](https://github.com/Sandesh3003/solution-design/assets/77960808/004db37c-a5b5-4a5a-b324-332437374edc)
+
+Neural networks can detect fraud by learning from historical data and finding patterns or anomalies that indicate fraudulent behavior. For example, a neural network can analyze transactions and flag those that are unusually large, frequent, or out of the norm for a customer or a merchant. A neural network can also compare transactions with other sources of information, such as location, device, or biometric data, to verify the identity and authenticity of the parties involved.
+ 
+Neural networks provide several advantages over traditional methods of fraud detection, such as they can generalize to unseen cases by inferring from the data they have learned and making predictions for new or rare situations. Lastly, neural networks can provide probabilistic outputs, such as confidence scores or likelihood ratios, that can help you assess the risk and severity of fraud.
+
+The study on the performances for the feed-forward neural network, the convolutional neural network, the long short term memory, and the LSTM with Attention is discussed here:
+https://fraud-detection-handbook.github.io/fraud-detection-handbook/Chapter_7_DeepLearning/RealWorldData.html
+
+The sequential models(CNN models) are better than the regular feed-forward network, suggesting that the information brought by the history of transactions is relevant for fraud detection. The LSTM performs better than the CNN for the set of chosen hyperparameters, and the Attention brings a little value.
